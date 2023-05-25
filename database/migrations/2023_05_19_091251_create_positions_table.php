@@ -12,8 +12,8 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('positions', function (Blueprint $table) {
-            $table->id();
-            $table->string('code');
+            $table->id(); #otomatis primary key
+            $table->string('code'); 
             $table->string('name');
             $table->string('description');
             $table->timestamps();
